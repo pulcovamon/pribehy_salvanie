@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fotogalerie | Příběhy Šalvánie</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" href="text/css" href="slideshow.css">
+<script src="slideshow.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <fieldset>
+    <div class="row">
+      <div class="column">
+        <a class="'nazev_stranky"  href="index.html">
+          <h1>Příběhy Šalvánie</h1>
+      </a>
+        </div>
+    <div class="column">
+      <img id="listiny" src="images/pribehy_obr1.png">
+    </div>
+    <div class="column">
+      <img id="listiny" src="images/dron_pravda.jpg">
+    </div>
+    <div class="column">
+      <img id="listiny" src="images/les.jpg">
+    </div>
+    <div class="column">
+      <img id="listiny" src="images/dron_svetlo.jpg">
+    </div>
+    </div>
+    </fieldset>
+  </div>
+  
+  <div>
+    <fieldset class="menu_box">
+      <ul>
+          <li><a class="menu" href="index.html"> Domů </a></li>
+          <li><a class="menu" href="pravidla.html"> Pravidla </a></li>
+          <li><a class="menu" href="postavy.html"> Postavy </a></li>
+          <li><a class="menu" href="svet.html"> Reálie světa </a></li>
+          <li><a class="menu" href="probehle.html">Proběhlé akce</a></li>
+          <li><a class="menu" href="fotogalerie.html">Fotogalerie</a></li>
+          <li><a class="menu" href="navody.html" >Návody </a></li>
+          <li><a class="menu" href="kontakty.html"> Příští akce </a></li>
+      </ul>
+      </fieldset>
+    </div>
+
+    <div class="hlavni_stranka">
+
+    <fieldset>
+        <legend><h2>fotogalerie</h2></legend>
+
+        <br>
+        <div>
+        <button class="foto"
+        onclick="window.open('https://photos.google.com/share/AF1QipNGsacwX64itaQnXQUTUGPfS7NcjEX-vinyBywEcUEV4iTBeirgW77QcMLfS24Xeg?key=dkpMODBlTTdzMHRxRm9YcFZqREpVUC1XMndlOVhB', '_blank'); return false;">
+              Pustina 8. 10. 2017 - fotky Taronor
+        </button><button class="foto"
+        onclick="window.open('https://photos.app.goo.gl/vVngBNE5GMRGgmjbA', '_blank'); return false;">
+              Srdce lesa 2. 6. 2018 - fotky Tomáš Pulc
+        </button><button class="foto"
+        onclick="window.open('https://photos.app.goo.gl/VkMkccSzFdBDPj989', '_blank'); return false;">
+              Pravda 6. 10. 2018 - fotky Tomáš Pulc
+        </button><button class="foto"
+        onclick="window.open('https://photos.app.goo.gl/Q7za7s1WwCuDDhw28', '_blank'); return false;">
+              Slavnost Tvrz Dřevčice 30. 3. 2019 - fotky Tomáš Pulc
+        </button><button class="foto"
+        onclick="window.open('https://photos.google.com/share/AF1QipMECVtaKqFl7YZOi4hsVvsftliCBvtY6AGKNZ5lRk7askIptJW0HUMC_MNc8lDKmg?key=QWU1ZHd1eWNaMklfdGhzNWo5NHRFckJtRndYLUd3', '_blank'); return false;">
+              Světlo na konci tunelu 16. 11. 2019 - fotky Tomáš pulc
+        </button><button class="foto"
+        onclick="window.open('https://photos.google.com/u/2/share/AF1QipPxFafrAx7_cWnZDW0dr0kdtEVXKvI3FWlm0ZPNI8QJAUL3eM9ZqaSBBVYc-5x7lw?key=bkxTOVFrVVIxeVRyQ1dVNDBzV01vQjVTTVJhTDBR', '_blank'); return false;">
+              Lovecká výprava Prince Januše 30. 8. 2020 - fotky Tomáš pulc
+        </button>
+        </div>
+
+        <style>
+            * {box-sizing:border-box}
+    
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+      padding-top: 30px;
+    }
+    
+    /* Hide the images by default */
+    .mySlides {
+      display: block;
+      margin: auto;
+      width: 90%;
+    }
+    
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 10px;
+      color: rgb(255, 255, 253);
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      right: 5%;
+      border-radius: 3px 0 0 3px;
+    }
+    .prev {
+      left: 5%;
+      border-radius: 0px 3px 3px 0px;
+    }
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+    
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @-webkit-keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+    
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+        </style>
+        <!-- Slideshow container -->
+    <div class="slideshow-container">
+    
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides">
+          <img src="images/slide1.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <img src="images/slide2.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <img src="images/slide3.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <img src="images/slide4.jpg" style="width:100%">
+          </div>
+    
+          <div class="mySlides">
+            <img src="images/slide5.jpg" style="width:100%">
+          </div>
+    
+          <div class="mySlides">
+            <img src="images/slide6.jpg" style="width:100%">
+          </div>
+    
+          <div class="mySlides">
+            <img src="images/slide7.jpg" style="width:100%">
+          </div>
+    
+          <div class="mySlides">
+            <img src="images/slide8.jpg" style="width:100%">
+          </div>
+    
+          <div class="mySlides">
+            <img src="images/slide9.jpg" style="width:100%">
+          </div>
+    
+          <div class="mySlides">
+            <img src="images/slide10.jpg" style="width:100%">
+          </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+        <span class="dot" onclick="currentSlide(10)"></span>
+      </div>
+    
+      <script>
+          var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+      </script>
+
+      </fieldset>
+      </div>
+
+
+<hr class="dole">
+
+<a target="_blank" href="https://www.facebook.com/P%C5%99%C3%ADb%C4%9Bhy-%C5%A0alv%C3%A1nie-larp-116720819703811" title="Přejít na FB">
+  <img src="images/fb.png" alt="obr4" id="obr4">
+</a>
+
+<p class="uvod">
+  <a href="mailto:detskylarpinfo@gmail.com" title="Napsat email">detskylarpinfo@gmail.com</a>
+</p>
+
+</body>
+</html>

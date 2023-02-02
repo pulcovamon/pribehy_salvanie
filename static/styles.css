@@ -1,0 +1,330 @@
+h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    font-size: 35px;
+    margin: 10px;
+    text-transform: uppercase;
+}
+body {
+    /*background-image: url('images/pozadi.png');*/
+    background-color: blanchedalmond;
+    color: blanchedalmond;
+    font-family: Garamond, serif;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+h3 {
+    text-align: center;
+    font-size: 35px;
+    margin: 10px;
+    padding-bottom: 0px;
+}
+fieldset {
+    background-color: #5c4338;
+    border: 10px;
+    border-radius: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.hlavni_stranka {
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 0px;
+    margin-top: 15%;
+}
+
+p {
+    text-align: justify;
+    font-size: 20px;
+    font-family: Garamond, serif;
+}
+
+legend {
+    background-color: #628E90;
+    padding: 5px;
+    border: 10px;
+  }
+
+.uvod {
+    text-align: center;
+    margin-right: 10%;
+    margin-left: 10%;
+    font-size: 25px;
+}
+.nazev {
+    text-transform: uppercase;
+    text-align: left;
+    padding-left: 20px;
+    color:crimson;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.menu {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.menu:hover {
+    font-size: 21px;
+}
+
+.nazev_stranky {
+    overflow: hidden;
+    display: inline-block;
+}
+
+h1:hover {
+    font-size: 52px;
+    color: #00bdce;
+}
+
+li {
+    float:inherit;
+}
+
+li a {
+    display: block;
+    padding: 20px 16px;
+    text-decoration: none;
+}
+
+ img {
+    margin: auto;
+    width: 50%;
+    display: block;
+}
+a:link {
+    color: #628E90;
+    font-family: Garamond, serif;
+    text-decoration: none;
+}
+
+a {
+    color: blanchedalmond;
+}
+
+a:hover {
+    color: #00bdce;
+    font-size: 26px;
+}
+
+.foto {
+    font-size: 25px;
+    color: blanchedalmond;
+    background-color: #628E90;
+    border-color: #628E90;
+    border-radius: 10px;
+    margin: 10px;
+    width: 100%;
+    font-size: 26px;
+}
+
+.foto:hover {
+    border-color: #456364;
+    background-color: #456364;
+}
+
+.stitek {
+    width: 10%;
+    float:left;
+}
+.tluste {
+    font-weight: bold;
+    display: inline;
+}
+h4 {
+    font-weight: bold;
+    font-family: Garamond, serif;
+    text-transform: uppercase;
+    color: blanchedalmond;
+}
+h5 {
+    font-weight: bold;
+    font-family: Garamond, serif;
+    font-size: 20px;
+}
+
+.column {
+    flex: 20%;
+}
+
+.row {
+    display: flex;
+}
+
+.pravidla_styl {
+    border-style: dotted;
+    border-width: 4px;
+    border-color: darkred;
+    border-top: none;
+    border-bottom: none;
+    margin-top: 0px;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+#erby {
+    width: 90%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.dole {
+    border-top: 2px solid black;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.container {
+    margin-bottom: 20px;
+    position:fixed;
+    z-index: 1;
+    top: 0;
+}
+
+.menu_box {
+    color:blanchedalmond;
+    display: inline;
+    list-style-type: none;
+    position: fixed;
+}
+
+#listiny {
+    width: 100%;
+    height: 100%;
+}
+
+#obr4 {
+    width: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#obr4:hover {
+    transform: scale(1.3);
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  #obr5 {
+      margin-top: 10px;
+      float: right;
+      width: 25%;
+      transform: scaleX(-1);
+      padding: 0px;
+      margin-right: 25px;
+  }
+  
+  #erbik {
+    margin-top: 10px;
+    float: right;
+    width: 25%;
+    padding-top: 20px;
+    padding-right: 35px;
+    position: fixed;
+    right: 0;
+  }
+
+hr {
+    color: #628E90;
+}
+
+  .cara {
+      padding-top: 0px;
+      margin-top: 0px;
+  }
+
+  #postava {
+    margin-top: 10px;
+    float: right;
+    width: 20%;
+    padding-top: 20px;
+    padding-right: 35px;
+    position: fixed;
+    right: 0;
+  }
+
+  #pravidla {
+    margin-top: 10px;
+    float: right;
+    width: 30%;
+    padding-top: 20px;
+    padding-right: 35px; 
+  }
+
+  #kontakty {
+    margin-top: 10px;
+    float: right;
+    width: 30%;
+    padding-top: 20px;
+    padding-right: 35px;
+    transform: scaleX(-1);
+    position: fixed;
+    right: 0;
+  }
+
+  #realie {
+    margin-top: 10px;
+    float: right;
+    width: 25%;
+    padding-top: 20px;
+    padding-right: 45px;
+    transform: scaleX(-1);
+    position: fixed;
+    right: 0;
+  }
+
+  #navody {
+    margin-top: 10px;
+    float: right;
+    width: 23%;
+    padding-top: 20px;
+    padding-right: 35px;
+    position: fixed;
+    right: 0;
+  }
+
+  .boj {
+      width: 100%;
+  }
+  #kontakty_obr {
+      float: right;
+      width: 50%;
+  }
+  ol {
+      font-family: Garamond, serif;
+      text-align: justify;
+      font-size: 20px;
+  }
+  .seznam {
+      padding-top: 10px;
+      padding-right: 20px;
+  }
+  #mec {
+      float: right;
+      width: 30%;
+      padding-right: 20px;
+  }
+  .info {
+      text-align: left;
+      text-transform: uppercase;
+      color: crimson;
+      font-size: 25px;
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+  }
+  .info1 {
+      text-align: left;
+      text-transform: uppercase;
+      color: crimson;
+      font-size: 30px;
+    }    
