@@ -2,17 +2,26 @@
 <html>
 
 <head>
+
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1">
+
 <title>{% block page_title %}{% endblock %} | Příběhy Šalvánie</title>
 <meta charset="UTF-8">
+
 <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
 <link rel="stylesheet" href="{{ url_for('static', filename='slideshow.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='styles_phone.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='styles_desktop.css')}}">
+
 
 </head>
 
 <body">
 
-<div class="container">
-  <fieldset>
+<div class="desktop">
+  <fieldset class="container">
   <div class="row">
     <div class="column">
       <a class="'nazev_stranky" href="{{ url_for('homepage')}}">
@@ -35,7 +44,38 @@
   </fieldset>
 </div>
 
-<div>
+<div class="mobile">
+  <fieldset class="container_mobile">
+  <div class="row">
+    <div class="column">
+      <nav role="navigation">
+        <div id="menuToggle">
+          <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+          <ul id="menu">
+            <li><a class="menu" href= "{{ url_for('homepage')}}"> Domů </a></li>
+            <li><a class="menu" href="{{ url_for('pravidla')}}"> Pravidla </a></li>
+            <li><a class="menu" href="{{ url_for('postavy')}}"> Postavy </a></li>
+            <li><a class="menu" href="{{ url_for('svet')}}"> Reálie světa </a></li>
+            <li><a class="menu" href="{{ url_for('probehle')}}">Proběhlé akce</a></li>
+            <li><a class="menu" href="{{ url_for('foto')}}">Fotogalerie</a></li>
+            <li><a class="menu" href="{{ url_for('navody')}}" >Návody </a></li>
+            <li><a class="menu" href="{{ url_for('pristi')}}"> Příští akce </a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="column">
+        <a class="'nazev_stranky" href="{{ url_for('homepage')}}">
+          <h1>Příběhy Šalvánie</h1>
+      </a>
+      </div>
+  </div>        
+  </fieldset>
+</div>
+
+<div class="desktop">
   <fieldset class="menu_box">
     <ul>
         <li><a class="menu" href= "{{ url_for('homepage')}}"> Domů </a></li>

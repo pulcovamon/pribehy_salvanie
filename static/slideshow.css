@@ -9,7 +9,6 @@
 .mySlides {
   display: block;
   margin: auto;
-  width: 50%;
 }
 
 /* Next & previous buttons */
@@ -30,7 +29,6 @@
 
 /* Position the "next button" to the right */
 .next {
-    right: 25%;
     border-radius: 3px 0 0 3px;
   }
 
