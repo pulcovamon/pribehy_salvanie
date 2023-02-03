@@ -17,7 +17,7 @@
 }
 
 .hlavni_stranka {
-    margin-top: 10%;
+    margin-top: 60%;
     width: 100%;
 }
 
@@ -221,4 +221,82 @@ nav {
 {
   transform: none;
 }
+
+#obr5 {
+margin-top: 10px;
+width: 50%;
+transform: scaleX(-1);
+z-index: -1;
+position: fixed;
+margin-left: 25%;
+margin-right: 25%;
+}
+
+#erbik {
+  margin-top: 20px;
+  width: 60%;
+  margin-left: 17.5%;
+  position: fixed;
+  z-index: -1;
+}
+
+#postava {
+  margin-top: 10px;
+  width: 50%;
+  position: fixed;
+  z-index: auto;
+  margin-left: 25%;
+  z-index: -1;
+}
+
+#pravidla {
+  margin-top: 10px;
+  float: right;
+  width: 30%;
+  padding-top: 20px;
+  padding-right: 35px; 
+}
+
+#kontakty {
+  margin-top: 20px;
+  width: 60%;
+  transform: scaleX(-1);
+  position: fixed;
+  margin-left: 20%;
+  z-index: -1;
+}
+
+#realie {
+  margin-top: 20px;
+  width: 60%;
+  transform: scaleX(-1);
+  position: fixed;
+  z-index: -1;
+  margin-left: 20%;
+}
+
+#navody {
+  margin-top: 30px;
+  width: 40%;
+  position: fixed;
+  margin-left: 30%;
+  z-index: -1;
+}
+
+#probehle {
+  margin-top: 10px;
+  width: 60%;
+  position: fixed;
+  margin-left: 18%;
+  z-index: -1;
+}
+
+#foto_paint {
+  margin-top: 10px;
+  width: 60%;
+  position: fixed;
+  margin-left: 18%;
+  z-index: -1;
+}
+
 }

@@ -307,10 +307,26 @@ h6 {
     padding-right: 35px;
     position: fixed;
     right: 0;
-    }
+}
 
-hr {
-    color: #628E90;
+#probehle {
+    margin-top: 10px;
+    float: right;
+    width: 25%;
+    padding-top: 20px;
+    padding-right: 35px;
+    position: fixed;
+    right: 0;
+}
+    
+    #foto_paint {
+        margin-top: 10px;
+        float: right;
+        width: 25%;
+        padding-top: 20px;
+        padding-right: 35px;
+        position: fixed;
+        right: 0;
 }
 
 .cara {
@@ -370,11 +386,6 @@ hr {
 
 .boj {
         width: 100%;
-}
-
-#kontakty_obr {
-        float: right;
-        width: 50%;
 }
 
 .seznam {
