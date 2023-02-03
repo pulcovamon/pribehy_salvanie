@@ -1,0 +1,238 @@
+{% extends "base.html" %}
+
+{% block page_title %}Pravidla{% endblock %}
+
+{% block background_image %}
+<img id="erbik" src="{{ url_for('static', filename='images/pravidla.png')}}" alt="erbik">
+{% endblock %}
+
+{% block section %}Pravidla{% endblock %}
+
+{% block main_text %}
+<p>
+    Cílem této hry je co nejvíc si ji užít, zažít něco neobvyklého, zajímavého, dobrodružného…
+    Rozhodně to není žádná soutěž, nejsou zde ani vítězové, ani poražení.
+
+    Ve hře jako postava můžete švindlovat, šidit, podvádět, pokud je to vaším cílem (může být)
+    a je to naprosto podle pravidel. Pokud to umíte, můžete někoho okrást, můžete někoho napálit atd.
+    Ale svou postavu hrajte opravdu poctivě, abyste nekazili hru ani sobě ani ostatním.
+    I když se vám stane něco nepříjemného, zahrajte to. Někdo vás zabije? Nehádejte se,
+    že to není pravda, hra tím pro vás nekončí, máte možnost reinkarnace. Vypijete lektvar s
+    nepříjemnými účinky? Zahrajte to, jak nejlépe dovedete. Někdo vás okrade nebo ošidí? Nehádejte se,
+    že to není fér, máte stejnou možnost. Když nemáte nějakou schopnost, nepoužívejte ji.
+    Pokud vás někdo zasáhne mečem, přiznejte to. Když máte něco udělat, udělejte to, i když vás
+    nikdo nekontroluje. Jen tak si můžete hru užít naplno jak vy, tak ostatní hráči.
+</p>
+<hr>
+<legend class="rasy"><h6>Hraní postavy</h6></legend>
+<br>
+<p>
+    Celá tato hra je založena na tom, že se ocitnete úplně v jiném světě (plném dobrodružství, kouzel,
+    různých bytostí) v kůži někoho, kým za normálních okolností nejste (elf, víla, trpaslík, mág…).
+    Abyste si hru opravdu užili, je nutné se do tohoto světa vžít úplně. To znamená nepovídat si o věcech,
+    které do hry nepatří (pomlouvat spolužáky, bavit se o tom, co bude zítra k obědu…), nehrát hry na telefonu atd.,
+    naopak je nutné hrát co nejvěrněji postavu, kterou jste si vybrali i to, co ji během tohoto dne potká.
+    Představte si to třeba jako divadlo, které hrajete pro sebe a ostatní hráče. Když máte zkamenět, opravdu
+    zkameňte, když na vás skřítek sešle blechy, drbejte se, jako byste blechy měli. Zamyslete se, jaká vaše postava
+    je, jestli je hodná, zlomyslná, samotářská… Elf bude mluvit jinak než trpaslík. Povídejte si mezi sebou,
+    jako kdybyste byli opravdu tím, koho hrajete.
+</p>
+<hr>
+<legend class="rasy"><h6>Boj</h6></legend>
+<br>
+<img class="boj" src="{{ url_for('static', filename='images/prisera_boj.png')}}">
+<p>
+    Během hry budete mít spoustu příležitostí si zabojovat, i když hru si lze užít i bez boje.
+    Na akci používáme měkčené zbraně. Nicméně upozorňuji, že boj je boj a nějaká ta modřina být může!
+    Pokud během hry nebude některý hráč dodržovat určená pravidla, může mu být boj do konce hry zakázán,
+    i když má svou vlastní zbraň.
+
+    Bojovat může každý, kdo bude mít zájem, protože náš herní svět je plný nebezpečí a různých příšer.
+    Pokud se ve hře rozhodnete bojovat, je nejlepší mít svou vlastní zbraň. V sekci návody bude návod na výrobu.
+    Několik zbraní snad bude k zapůjčení, ale není jich mnoho, takže kdo máte zájem, ozvěte se co nejdřív :D
+</p>
+<h4>Pro boj platí určitá pravidla:</h4>
+<p>
+    - Bojovat se smí pouze schválenými zbraněmi (budou viditelně označené) - měkčené, vyrobené podle pravidel.
+</p>
+<p class="tluste">
+    - Zásahová plocha je celé tělo kromě hlavy a rozkroku (pokud Vás někdo OMYLEM zasáhne do tohoto místa,
+    zásah si nepočítáte). Pokud tam někoho zasáhnete OMYLEM vy, zastavíte hru, omluvíte se, zeptáte se, jestli
+    je v pohodě a případně vyhledáte zdravotníka/orga.
+</p>
+<p>
+    - Každý hráč bude mít daný počet životů podle zvolené rasy a vzhledu svého kostýmu.
+</p>
+<p>
+    - Zásah kteroukoli zbraní ubírá jeden život (kromě výjimek řečených vždy dopředu).
+</p>
+<p>
+    - Komu klesne počet životů na nula, umírá - zahraje smrt, lehne si na zem a počká do konce boje.
+    Poté se zvedne s rukou na hlavě (neviditelnost) a řídí se pravidly pro smrt.
+</p>
+<p>
+    - Údery je NUTNÉ TLUMIT - platí hlavně pro starší a silnější jedince.
+
+    I když je zbraň měkčená, zásah plnou silou dost bolí! Zároveň sekáme pouze čepelí,
+    nikdo nebude mlátit naplocho (tyto zásahy neplatí).
+</p>
+<p>
+    - Jako zásah se počítá jen úder s nápřahem (alespoň 90°), vlnitý plech ani jiné libůstky nevedeme.
+    Zároveň neplatí, pokud mimo boj bacíte postavu třikrát do zad aniž by měli šanci jakkoli zareagovat,
+    tohle se počítá pouze za jeden život. Mimo bitvu se dá postava zabít v souboji, podřezáním, nebo zahraným propíchnutím atd.
+</p>
+<p>
+    - Při boji se ZÁSADNĚ NEHÁDÁME a uznáváme si zásahy, je to přeci jen legrace. Zásah uznává vždy zasažený!
+</p>
+<img width="80%" src="{{ url_for('static', filename='images/stit.png')}}" style="padding-bottom: 10px;">
+<p class="tluste">
+    - Kdo nebude dodržovat tato pravidla, bude mu boj zakázán!
+</p>
+<hr>
+<legend class="rasy"><h6>Herní smrt</h6></legend>
+<p>
+    Během hry (hlavně bojů) se občas stane, že někdo (herně!!!) zemře. Nevěšte hlavu,
+    na rozdíl od normálního života v našem světě smrtí nic nekončí!
+
+    Pokud vás někdo zabije, vezmete svoji kartičku se srdíčkem a roztrhnete ji. Může se stát,
+    že bude ve hře postava, která tyto srdíčka umí vysávat, v tom případě vám to řekne a vy jí ho neroztržené předáte.
+    Poté si lehnete/případně dřepnete na zem a hrajete mrtvolu (do konce souboje, nebo několik minut).
+    V této fázi vás může někdo obrat o vaše herní předměty, funguje to stejně jako při okrádání
+    (vybere si jednu tašvici, okradený vyndá všechny herní předměty, co tam má a dá mu vybrat),
+    ale okrádající si nemusí vybírat poslepu a nepotřebuje kolíček (nemusí mít schopnost okrádání).
+    Ale myslete na to, že okrádání mrtvol také není společensky úplně v pohodě. Dále si viditelně na tělo přivážete
+    bílý šátek - to značí, že je z vás duch. Duch je pro normální lidi neviditelný, vidět ho můžou jen
+    malé lesní bytosti a někteří mágové. A právě za někým takovým vy potřebujete zajít. Dotyčný vás
+    může oživit, pravděpodobně za to ale bude něco chtít. Provede oživovací rituál a dá vám novou
+    kartičku se srdíčkem, kterou si opět podepíšete a přicvaknete na glejt. Zůstávají vám všechny
+    herní předměty, které vám nikdo neukradl.
+</p>
+<p>
+    Takže smrti u nás se opravdu nemusíte bát! :-)
+</p>
+<img class="boj" src="{{ url_for('static', filename='images/smrt.png')}}">
+<hr>
+<legend class="rasy"><h6>Herní území</h6></legend>
+<br>
+<p>
+    Po každé bude před hrou určené a vymezené, kam se chodit smí a kam už ne. 
+</p>
+<p>
+    Všechny malé lesní bytosti budou po herním území chodit společně ve skupině (jedné nebo dvou)
+    v doprovodu svého dobrého lesního ducha (dospělého).
+</p>
+<p>
+    Starší děti se mohou pohybovat v určené oblasti samostatně, během cestování všechny
+    bude doprovázet průvodce.
+</p>
+<img src="{{ url_for('static', filename='images/uzemi.png')}}">
+<hr class="cara">
+<legend class="rasy"><h6>Herní peníze</h6></legend>
+<br>
+<p>
+    V Šalvánii se k placení nejčastěji využívají kovové mince. Ty se dělí na čtyři druhy -
+    fufně, měďáky, stříbrňáky a zlatky. Dají se mezi sebou měnit tímto způsobem: čtyři fufně jsou jeden měďák,
+    čtyři měďáky jsou jeden strříbrňák a čtyři stříbrňáky jsou jedna zlatka. 
+
+    Na severu Šalvánie se dále jako platidlo používají perly. Jedna perla se dá směnit za
+    jeden fufeň.
+
+    Platit se dá samozřejmě i zlatem, stříbrem a drahými kameny. Tam je však na každém, jakou
+    hodnotu jim přisoudí.
+</p>
+<img src="{{ url_for('static', filename='images/penize.png')}}">
+<hr>
+<legend class="rasy" style="width: 60%;"><h6>Kouzlení, míchání lektvarů</h6></legend>
+<p>
+    Každý, kdo chce, může kouzlit a míchat lektvary, ať kouzelné či léčivé nebo smrtelné (jedy).
+    Ale je nutné se to napřed naučit! Učit se můžete z knih, svitků atd, pokud se Vám dostanou do
+    ruky, nebo od lidí, které potkáte. Ti ale za svou službu pravděpodobně budou chtít nějakou
+    protislužbu, zaplatit, něco obětovat atd. 
+
+    Při kouzlení je důležité, aby kouzlo bylo vysloveno zřetelně, hlasitě a s odpovídajícím dobře
+    rozeznatelným gestem.
+
+    Na lektvary budete potřebovat různé suroviny - byliny, které můžete sami sbírat nebo je
+    kupovat od obchodníků, pocestných..., různé výtažky získané ze zabitých příšer - opět je
+    možné i kupovat, pokud žádná příšera není v dohledu, různé kameny a tekutiny. Vždy je nutné
+    dodržet správný postup! Je vhodné mít s sebou nějakou nádobku, lahvičky a pytlíčky, ve kterých
+    budete suroviny přenášet a lektvary míchat.
+
+    Dále je dobré mít u sebe psací potřeby a kouzla či recepty na lektvary si zapisovat, abyste je nezapomněli!
+</p>
+<hr>
+<legend class="rasy"><h6>Magie</h6></legend>
+<img src="{{ url_for('static', filename='images/magie.png')}}">
+<p>
+    Magii se může učit každý. Dělí se na úrovně:
+<p style="font-weight: bold;" style="display: inline;">1. úroveň</p style="display: inline;"> <p>-
+    jednoduchá kouzla na dotek - oslepení, malátnost,vyléčení 1 života, němota atd... Je zapotřebí
+    se cíle dotknout a dotýkat se ho po celou dobu pronášení zaříkadla. To se bude skládat z magických
+    slov a vysvětlení, co se má stát. Tyto efekty mají trvání 15 s (pokud není řečeno jinak).
+    Cena těchto kouzlíček je 1 mag.
+<br><p style="font-weight: bold;">2. úroveň</p> - složitější rituály, které stojí více magů.
+Mágové na 2. úrovni si vybírají své zaměření (oheň/vzduch/druid/léčitel/temná magie...) a ke
+kouzlení potřebují magickou hůl.
+<br><p style="font-weight: bold;">3. úroveň</p> - složitá kouzla a rituály, které si mág vymýšlí sám.
+Vždy je nutné schválení kouzla/rituálu orgem
+<br>Magické probuzení - získaná dovednost učením. Každý, kdo chce kouzlit, musí si vyrobit magický amulet,
+který se skládá z počítadla magů a předmětu, ze kterého mág získává svou sílu (tento předmět je možné si
+dopředu přinést (myslete na to, že se z toho v tu chvíli stane herní předmět!), nebo získat ve hře, počítadla
+magů dostanete od nás.
+</p>
+<hr>
+<legend class="rasy"><h6>Alchymie</h6></legend>
+<img src="{{ url_for('static', filename='images/lektvar.png')}}">
+<p>
+    Na míchání lektvarů je vždy zapotřebí (může být zapotřebí něco navíc/víc druhů bylin nebo surovin...):
+</p>
+<p>
+    - rozpouštědlo - voda na lektvary určené k pití, olej na pomazání mečů (vylévá se vedle),
+    nebo mastička na výrobu mastí. 
+</p>
+<p>
+    - surovinu - krev, sliz nebo prášek z příšery, česnek...
+</p>
+<p>
+    -bylinu
+</p>
+<p>
+    Na míchání lektvarů a přechovávání surovin na ně je zapotřebí mít s sebou lahvičky (malé flakonky),
+    pytlíčky, mističky.
+
+    Jedna lahvička je vždy jedna dávka a musí být vždy vypitá celá. Je dobré, aby nebyla příliš velká.
+    Mast je na více použití, ale je zapotřebí mít vždy nový obvaz.
+</p>
+<p>Je několik typů lektvarů:</p>
+<p>
+    léčivé - léčí jeden, nebo více životů, případně léčí různé nemoci. Můžou být v podobě lektvaru na
+    pití (musí se vypít celý), nebo masti, která se nanese na kůži a obváže.
+</p>
+<p>
+    - omamné - doba trvání efektu je několik minut. Existují lektvary na vypití (musí se vypít celý),
+    pevné halucinogeny na snědení, nebo omamné páry, kterými může být zamořená celá místnost
+    (tento efekt bude popsán přímo v dané lokaci). 
+</p>
+<p>
+    - jedy - ubírají jeden, nebo více životů. Můžou způsobovat i další efekty (nemoci, postižení...).
+    Existují jedy na vypití (je možné je třeba přidat do pití/pokapat jídlo atd, ale je nutné jed vypít celý),
+    případně jedovaté páry v místnosti (bude případně vysvětleno v dané lokaci).
+</p>
+<p>
+    - magické - dávají postavě nadpřirozené schopnosti na dobu několika minut. Existují například lektvary neviditelnosti,
+    létání, nebo třeba pravdomluvnosti. Tyto lektvary se vždy pijí (opět je nutné vypít celý obsah flakónku).
+</p>
+<p>
+    - oleje na zbraň - dávají meči nadpřirozené schopnosti na dobu jednoho souboje. Lektvar se celý vylije na zem a na
+    zbraň se přiváže bavlnka, která symbolizuje olej. Bavlnka se po konci souboje sundá a vyhodí. 
+</p>
+<p>
+    Lektvary se může naučit rozpoznávat každý (podle barvy, vůně, chuti...). Zároveň však musí být každá lahvička s
+    lektvarem označena - textem dovnitř přilepený lísteček s efektem lektvaru, který si hráč přečte až po vypití.
+    Oleje na meče musí být označeny zvenčí čitelným nápisem "nepít". 
+</p>
+<p>
+    Lektvary je nutné spotřebovat v ten samý den, co byly vyrobeny. Pokud to nestihnete, musíte je vylít (obsahují věci,
+    které se můžou zkazit). Masti, oleje a jednotlivé suroviny a bylinky vydrží déle, do další kapitoly je však také nenechávejte.
+</p>
+{% endblock %}

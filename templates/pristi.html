@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block page_title %}Příští akce{% endblock %}
+
+{% block background_image %}
+<img id="kontakty" src="{{ url_for('static', filename='images/kontakty.png')}}" alt="kontakty">
+{% endblock %}
+
+{% block section %}Příští akce{% endblock %}
+
+{%block main_text %}
+<img id="kontakty_obr" src="{{ url_for('static', filename='images/kontakty_obr.png')}}" alt="kontakty_obr">
+    <h4 class="info1">Bude upřesněno</h4>
+    <legend class="rasy"><h4 class="info">Kdy</h4></legend>
+    <p>
+        <br>
+    </p>
+    <legend class="rasy"><h4 class="info">Kde</h4></legend>
+    <p>
+        <br>
+    </p>
+    <legend class="rasy"><h4 class="info">Za kolik</h4></legend>
+    <p>
+        <br>
+    </p>
+    <legend class="rasy"><h4 class="info">Co s sebou</h4></legend>
+    <p>
+        <ol>
+            <li class="ssebou" type="circle">kostým a doplňky</li>
+            <li class="ssebou" type="circle">měkčené zbraně</li>
+            <li class="ssebou" type="circle">žebradlo, váčky, tašvice...</li>
+            <li class="ssebou" type="circle">miska + lžička na jídlo</li>
+            <li class="ssebou" type="circle">lahev na pití</li>
+            <li class="ssebou" type="circle">zápisník a tužka</li>
+        </ol>
+    </p>
+    <legend class="rasy"><h4 class="info">Přihláška</h4></legend>
+    <p>
+        <br>
+    </p>
+{% endblock %}
