@@ -59,6 +59,18 @@ fieldset {
     left: 25%;
 }
 
+.prev:hover {
+    background-color: rgba(0,0,0,0.8);
+    left: 25.5%;
+    transform: scale(1.2);
+  }
+  
+  .next:hover {
+      background-color: rgba(0,0,0,0.8);
+      right: 25.5%;
+      transform: scale(1.2);
+  }
+
 .hlavni_stranka {
     margin-left: 30%;
     margin-right: 30%;

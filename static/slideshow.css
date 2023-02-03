@@ -37,19 +37,6 @@
     border-radius: 0px 3px 3px 0px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover {
-  background-color: rgba(0,0,0,0.8);
-  left: 25.5%;
-  transform: scale(1.2);
-}
-
-.next:hover {
-    background-color: rgba(0,0,0,0.8);
-    right: 25.5%;
-    transform: scale(1.2);
-}
-
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
