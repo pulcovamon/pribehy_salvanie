@@ -82,6 +82,7 @@ img {
 a {
     color: #628E90;
     text-decoration: none;
+    transition: all 0.3s ease-in-out;
 }
 
 .foto:hover {

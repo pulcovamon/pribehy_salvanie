@@ -10,8 +10,8 @@
 
 {%block main_text %}
 <p>
-    Hráči budou rozděleni do dvou kategorií podle věku. Mladší děti cca do 10ti let,
-    starší cca od 10ti let. Spodní a horní hranice věku není určena,  vše je na domluvě.
+    Hráči budou rozděleni do dvou kategorií podle věku. Mladší děti cca do 10 let,
+    starší cca od 10 let. Spodní a horní hranice věku není určena,  vše je na domluvě.
 
     Každý z hráčů si vybere postavu, kterou chce hrát. Každá rasa má nějaké výhody a
     nevýhody, nadání pro nějakou činnost atd..
@@ -21,6 +21,15 @@
     Pokud si s výrobou kostýmu nebudete vědět rady, pište, volejte či jinak kontaktujte,
     rádi Vám s přípravou poradíme, pomůžeme, nějaké doplňky (v omezeném množství) budou k zapůjčení.
 </p>
+<div class="header_height">
+<ul>
+    <li><a href="javascript:void(0)">Mladší děti</a></li>
+    <li><a href="javascript:void(0)">Člověk</a></li>
+    <li><a href="javascript:void(0)">Elf</a></li>
+    <li><a href="javascript:void(0)">Trpaslík</a></li>
+    <li><a href="javascript:void(0)">Hobit</a></li>
+</ul>
+</div>
 <img class="boj" src="{{ url_for('static', filename='images/lid1.png')}}">
 <hr>
 <legend class="rasy"><h6>Mladší děti</h6></legend>
@@ -37,8 +46,8 @@
     Kouzelné bytosti samozřejmě umějí kouzlit. Jde o lesní kouzla, kterými mohou pomáhat či naopak
     uškodit dalším hráčům i loupežníkům a jiným potvorám, které by je třeba chtěly v lese přepadnout.
     Také dokáží připravit nejrůznější lektvary, kouzelné mastičky, mohou dělat magické rituály.
-    Kouzlení je pro ně přirozené stejně jako třeba dýchání, proto se nemusejí nic učit. Kouzla si
-    vymýšlejí podle své fantazie, stejně jako míchání nejrůznějších lektvarů.  
+    Kouzlení je pro ně přirozené stejně jako třeba dýchání, nemají nijak omezený počet kouzel,
+    který můžou zakouzlit. Každá postava si může vybrat 5 lesních kouzel.
 </p>
 <p>
     I tyto postavy mohou bojovat, ale rozměry jejich zbraní musí být přiměřené jejich velikosti
@@ -104,7 +113,7 @@
     Primárně se inspirujte vrcholným až pozdním středověkem, nebo třeba hrou Zaklínač 3. 
 
     <br>
-    <b class="tluste">Počet životů: 2</b>
+    <b class="tluste">Počet životů: 3</b>
     <br>
     Vybrat si můžete ze tří nadání: hraničář, velitel a fanatik.
     <br>
@@ -120,7 +129,7 @@
 <legend class="rasy"><h6>ELF</h6></legend>
 <p>
     Elf je bytost, pocházející z lesa. Má zvýhodnění při nenápadném pohybu lesem, skrývání se, a při
-    kouzlení. (oproti minulým pravidlům bojovat s mečem smí!) Musí mít dlouhé špičaté uši, návod na
+    kouzlení. Musí mít dlouhé špičaté uši, návod na
     výrobu najdete v sekci návody.
     Elfové se odívají převážně do zelených, hnědých a přírodních barev (není to ale podmínkou, elfové,
     co žijí ve městech si naopak v barvách libují.),
@@ -128,7 +137,7 @@
     a ornamenty (často listy a přírpodní motivy).
     Inspirovat se můžete elfy ze hry Zaklínač 3, nebo z filmů Pán prstenů. 
     <br>
-    <b class="tluste">Počet životů: 1</b> (pomocí magického rituálu si může vždy před bojem zvýšit počet životů o 1)
+    <b class="tluste">Počet životů: 2</b>
 </p>
 <p>
     <b class="tluste">Maskování</b> - Může se schovat (musí být reálně alespoň trochu skrytý) tak, že ho nikdo nevidí
@@ -139,12 +148,7 @@
     <br>
     <b class="tluste">Magická moc</b> - může používat i slova, která nejsou z jeho živlu.
 </p>
-<p>
-    <b class="tluste">Nevýhody:</b><br>
-    Nemůže si trvale zvýšit (počet životů), pouze jednorázově před bojem pomocí rituálu.
-    <br>
-    Nemůže se naučit dovednost "obří síla" - jeho zbraně na blízko vždy berou pouze 1 život.
-</p>
+
 <img src="{{ url_for('static', filename='images/elf.png')}}" alt="">
 <hr>
 <legend class="rasy"><h6>TRPASLÍK</h6></legend>
@@ -156,19 +160,12 @@
     trpaslíky z Pána prstenů, není to ale podmínkou, trpaslíci žijící ve městech převzali
     lidskou módu, jen ji doplnili o runy a ornamenty.
     <br>
-    <b class="tluste">Počet životů: 3</b>
+    <b class="tluste">Počet životů: 4</b>
 </p>
 <p>
-    <b class="tluste">Odolnost proti magii</b> - nepůsobí na něj žádná kouzla, magické předměty ani kouzelné lektvary
-    (jedy a léčivé ANO)<br>
     <b class="tluste">Obří síla</b> - Prvním zásahem v boji může ubrat 2 životy (hlásí se pomocí hesla "Zhiň")
 </p>
-<p>
-    <b class="tluste">Nevýhody:</b><br>
-    Nemůže se učit magii.
-    <br>
-    Nemůže mít schopnost "maskování" a "plížení". 
-</p>
+
 <img src="{{ url_for('static', filename='images/trpos.png')}}" alt="trpaslik">
 <hr>
 <legend class="rasy"><h6>HOBIT</h6></legend>
@@ -179,32 +176,18 @@
     Hobiti se odívají do krátkých barevných vestiček a kabátů, rádi nosí kahloty s kšandami a
     různé klobouky. Skvělý doplněk je dýmka nebo vycházková hůl. Inspirujte se hobity z Pána prstenů.
     <br>
-    <b class="tluste">Počet životů: 2</b>
+    <b class="tluste">Počet životů: 3</b>
 </p>
 <p>
-    <b class="tluste">Maskování</b> - Může se schovat (musí být reálně alespoň trochu skrytý) tak, že ho nikdo nevidí
-    (Značí se rukou na hlavě),
-    během maskování se nesmí hýbat ani mluvit.
-    <br>
     <b class="tluste">Plížení</b> - může se pomaličku (pata špička) plížit v zákrytu (podél zdi ve stínu, v hustém lese mezi stromy)
     a ostatní postavy ho musí ingonorovat.
     Při plížení nesmí mluvit, ani vydávat jiné zvuky, dupat (musí jít opravdu tiše), zvednout se, vyjít
-    ze zákrytu, bojovat, střílet, kouzlit, prostě nic, jen se plížit. Plížení se značí rukou na hlavě
+    ze zákrytu, bojovat, střílet, kouzlit, prostě nic, jen se plížit. Plížení se značí rukou na hlavě.
     <br>
     <b class="tluste">Bylinkář</b> - může míchat léčivé, omamné a jedovaté lektvary pouze z bylinek (nepotřebuje surviny),
     může mít u sebe o 2 bylinky více.
-    <br>
-    <b class="tluste">Hobití</b> blahobyt - když se nají a chvilku si pohoví, může si vyléčit jeden život.
 </p>
-<p>
-    <b class="tluste">Nevýhody:</b>
-    <br>
-    Nemůže se naučit dovednost "obří síla", jeho zbraně vždy berou pouze 1 život.
-    <br>
-    Nemůže mít více než základní počet many.
-    <br>
-    Nemůže používat obouruční a dřevcové zbraně a velké štíty.
-</p>
+
 <img class="boj" src="{{ url_for('static', filename='images/hobit.png')}}" alt="hobit">
 <hr>
 <legend class="rasy"><h6>MĚNIČ</h6></legend>
@@ -221,10 +204,11 @@
     Vlastnosti jednotlivých zvířat je možné konzultovat předem s námi. Počet zvířat, na které se měnič může
     měnit, není omezen, ale je dán počtem masek, které má připraveny.
     <br>
-    <b class="tluste">Počet životů: 2</b>
+    <b class="tluste">Počet životů: 3</b>
 </p>
 <p>
-    <b class="tluste">Výhody, nevýhody</b> - stejně jako člověk + vlastnosti zvířete, pokud je měnič proměněný.
+    <b class="tluste">Zvířecí podoba</b> - Por každé zvíře může mít jednu zvláštní schpnost typickou pro toto zvíře
+    (například pro medvěda by se hodila dovednost obří síla).
 </p>
 <img class="boj" src="{{ url_for('static', filename='images/menic2.png')}}" alt="menic">
 <hr>
@@ -239,32 +223,26 @@
     mají rádi barevné a všemožně vzorované šátky. Jako doplěk se hodí třeba nějaké rolničky a cinkátka. Inspirovat
     se můžete např. Saracény, Osmany nebo třeba Haradskými z Pána prstenů. 
     <br>
-    <b class="tluste">Počet životů: 1</b>
+    <b class="tluste">Počet životů: 2</b>
 </p>
 <p>
-    <b class="tluste">Šestý smysl</b> - neherně se může zeptat, zda má druhá postava proti němu špatné úmysly a dotázaná postava musí
-    po pravdě odpovědět. Kočičák pak podle této informace může herně jednat.
-    <br>
-    <b class="tluste">Mlha</b> - během boje může na chviličku  (cca 1-3 vteřiny) zmizet a objevit se jinde - ruka na hlavě.
-    <br>
-    <b class="tluste">Lízání si ran</b> - může si vyléčit jeden život tím, že se na chvíli uchýlí do ústraní, kde ho nikdo nevidí a
-    vylíže si rány (alespoň pár minut).
+    <b class="tluste">Šestý smysl</b> - neherně se může zeptat, zda má druhá postava proti němu špatné úmysly
+    (má v plánu mu v následující chvíli provést něco špatného) a dotázaná postava musí
+    po pravdě odpovědět (ano/ne). Kočičák pak podle této informace může herně jednat.
     <br>
     <b class="tluste">Rychlé prsty</b> - při okrádání pomocí kolíčku mu stačí napočítat do 50 namísto do 100.
 </p>
-<p>
-    <b class="tluste">Nevýhody:</b>
-    <br>
-    Nemůže se učit bojové schopnosti - tvrdý úder, odolnost atd...
-</p>
+
 <img class="boj" src="{{ url_for('static', filename='images/khajiit.png')}}" alt="khajiit">
 <hr class="cara">
 <legend class="rasy"><h6>BARBAR</h6></legend>
 <p>
-    Barbar je člověk, který je zaměřen hlavně na boj. Jeho výhodami jsou síla a odolnost, nevýhodou malá
-    inteligence - mluví krátkými jednoduchými větami, neumí číst, špatně a pomalu se učí, rychle se naštve
-    a problémy řeší silou. Jde o postavu, která je herně náročnější, je nutné opravdu ji hrát. Kostým tvořený
-    hlavně kůžemi a kožešinami.
+    Barbar je člověk, který je zaměřen hlavně na boj. Jeho výhodami jsou síla a odolnost. Barbaři žijí daleko od civilizace,
+    neznají tudíž klasické zvyky a tradice. Je pro ně složitější se cokoli učit. Neznamená to ale, že jsou hloupí,
+    při hraní této postavy je snadné spadnout do karikaturivání, proto je nutné si dát pozor. Barbaři se opravdu nechovají jako
+    postižění, jen je pro ně složitější pochopit klasické zvyklosti jako je měna, neradi respektují autority, neznají zákony,
+    to ale neznamená, že ne nemusí dodržovat.
+    Kostým tvořený hlavně kůžemi a kožešinami.
     Barbaři žijí na severu, oblečení mají tudíž také uzpůsobno do zimy. Nosí kaftany, kápě, široké kalhoty a
     kožešiny. Inspirujte se vikingy.
     <br>
@@ -273,17 +251,12 @@
 <p>
     <b class="tluste">Síla</b> - jeho zbraně ubírají dva životy  (je nutno zasaženému hlásit pomocí hesla "Zhiň"!).
     <br>
-    <b class="tluste">Zuřivost</b> - Pokud je zraněn, může zařvat a dát příští zásah za 3 životy (je nutno hlásit pomocí hesla "za tři")
+    <b class="tluste">Zuřivost</b> - Pokud je zraněn, může zařvat a dát příští zásah za 3 životy
+    (je nutno hlásit pomocí hesla "za tři").
     <br>
-    <b class="tluste">Odolnost</b> - v každém boji si nepočítá první zásah.
+    <b class="=tluste">Z divočiny</b> - Může si vybrat jen dvě dovednosti namísto tří.
 </p>
-<p>
-    <b class="tluste">Nevýhody:</b>
-    <br>
-    Nemůže se naučit sbírat bylinky.
-    <br>
-    Nemůže se učit magii.
-</p>
+
 <img src="{{ url_for('static', filename='images/barbar.png')}}" alt="">
 <hr>
 <legend class="rasy"><h6>GNÓM</h6></legend>
@@ -295,36 +268,19 @@
     nářadí atd. všude možně. Hodí se steampunkové doplňky jako brýle, klobouky, kožené zástěry, ozubená
     kolečka, jiné kožené doplňky... 
     <br>
-    <b class="tluste">Počet životů: 1</b>
+    <b class="tluste">Počet životů: 3</b>
 </p>
 <p>
     <b class="tluste">Snášenlivost</b> - může vypít neomezený počet lektvarů naráz (efekty se ale nesčítají!), aniž by dostal
     nějaký postih.
     <br>
-    <b class="tluste">Odolnost proti jedům atd.</b> - na gnóma nepůsobí žádné jedy, nestává se závislým na žádných omamných
-    látkách, může dýchat i v místech, kde se ostatní dusí...
-    <br>
-    <b class="tluste">Střelný prach</b> - Vždycky po kapsách najde nějaký ten střelný prach, tudíž může vyrábět výbušniny,
-    aniž by ho musel shánět (tento střelný prach nemůže nikomu dát ani prodat).
-    <br>
-    <b class="tluste">Pokusný králík</b> - Dokáže vymýšlet vlastní recepty na léčivé, omamné a jedovaté lektvary.
-    <br>
-    <b class="tluste">Mistr směsí</b> - umí míchat veškeré lektvary za použití pouze surovin (bez bylinek).
-    <br> 
-    <b class="tluste">Šikulka</b> - neplatí na něj negativní efekty v zámcích.
+    <b class="tluste">Učenlivý</b> - místo 3 zvláštních schopností si může vybrat 4.
 </p>
-<p>
-    <b class="tluste">Nevýhody:</b>
-    <br>
-    Nemůže používat zbraň delší než 60 cm, štíty ani luky.
-    <br>
-    Nemůže se naučit tvrdý úder.
-</p>
+
 <img src="{{ url_for('static', filename='images/gnom.png')}}" alt="">
 <hr>
 <p class="tluste">
-    Většinu speciálních vlastností jednotlivých ras, pokud pro ně nejsou zakázané, mohou získat i
-    ostatní jako dovednosti pomocí úkolů, zkušeností, učením. Některé dovednosti budou mít více úrovní.
+    Většinu speciálních vlastností jednotlivých ras mohou získat i ostatní postavy.
 </p>
 <img class="boj" alt="armada" src="{{ url_for('static', filename='images/armada.png')}}">
 <hr class="cara">
