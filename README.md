@@ -1,3 +1,3 @@
-# pribehy_salvanie
-Website for children LARP (live action role playing game).
+# Příběhy Šalvánie
+Website for children LARP (live action role playing game). <br>
 https://pribehysalvanie.pythonanywhere.com/
