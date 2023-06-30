@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1">
+
+<title>{% block page_title %}{% endblock %} | Příběhy Šalvánie</title>
+<meta charset="UTF-8">
+
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='slideshow.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='styles_phone.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='styles_desktop.css')}}">
+
+
+</head>
+
+<body">
+
+<div class="desktop">
+  <fieldset class="menu-box">
+    <div class="row">
+      <div class="column-1">
+        <a class="page-title" href="{{ url_for('home_page')}}">
+          <h1>Příběhy Šalvánie</h1>
+        </a>
+      </div>
+      <div class="column dropdown">
+        <span class="menu">Pravidla</span>
+        <div class="dropdown-content">
+          <ul>
+            <li><a class="menu" href="{{ url_for('rules_page') }}">Obecné</a></li>
+            <li><a class="menu" href="{{ url_for('characters_page') }}">Rasy</a></li>
+            <li><a class="menu" href="#">Zvláštní schopnosti</a></li>
+            <li><a class="menu" href="#">Tvorba postavy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="column dropdown">
+        <span class="menu">Herní svět</span>
+        <div class="dropdown-content">
+          <ul>
+            <li><a class="menu" href="{{ url_for('world_page') }}">Šalvánie</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="column dropdown">
+        <span class="menu">Akce</span>
+        <div class="dropdown-content">
+          <ul>
+            <li><a class="menu" href="{{ url_for('following_page') }}">Následující</a></li>
+            <li><a class="menu" href="{{ url_for('previous_page') }}">Proběhlé</a></li>
+            <li><a class="menu" href="{{ url_for('images_page') }}">Fotogalerie</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="column dropdown">
+        <span class="menu">Návody</span>
+        <div class="dropdown-content">
+          <ul>
+            <li><a class="menu" href="{{ url_for('manuals_page') }}">Kostýmy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="column-2">
+        <span class="menu"><a class="login" href="#">
+          Zaregistrovat se
+        </a></span>
+      </div>
+      <div class="column-2">
+        <span class="menu"><a class="login" href="#">
+          Přihlásit se
+        </a></span>
+      </div>
+    </div>
+  </fieldset>
+</div>
+
+<div class="mobile">
+  <fieldset class="container_mobile">
+  <div class="row">
+    <div class="column">
+      <nav role="navigation">
+        <div id="menuToggle">
+          <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+          <ul id="menu">
+            <li><a class="menu" href= "{{ url_for('home_page')}}"> Domů </a></li>
+            <li><a class="menu" href="{{ url_for('rules_page')}}"> Pravidla </a></li>
+            <li><a class="menu" href="{{ url_for('characters_page')}}"> Postavy </a></li>
+            <li><a class="menu" href="{{ url_for('world_page')}}"> Reálie světa </a></li>
+            <li><a class="menu" href="{{ url_for('previous_page')}}">Proběhlé akce</a></li>
+            <li><a class="menu" href="{{ url_for('images_page')}}">Fotogalerie</a></li>
+            <li><a class="menu" href="{{ url_for('manuals_page')}}" >Návody </a></li>
+            <li><a class="menu" href="{{ url_for('following_page')}}"> Příští akce </a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="column">
+        <a class="page-title" href="{{ url_for('home_page')}}">
+          <h1>Příběhy Šalvánie</h1>
+      </a>
+      </div>
+  </div>        
+  </fieldset>
+</div>
+
+<div class="desktop">
+  </div>
+
+    {% block background_image %}{% endblock %}
+    
+    <div style="float:initial;" class="main-content">
+
+    <br>
+
+    <fieldset class="text">
+      <legend><h3>
+        {% block section %}{% endblock %}
+      </h3></legend>
+      <div>
+        {% block main_text %}{% endblock %}
+      </div>
+  </fieldset>
+
+  <br>
+
+{% block slideshow %}{% endblock %}
+
+    <br>
+    <hr class="bottom">
+    <a target="_blank" href="https://www.facebook.com/P%C5%99%C3%ADb%C4%9Bhy-%C5%A0alv%C3%A1nie-larp-116720819703811" title="Přejít na FB">
+        <img src="{{ url_for('static', filename='images/fb.png')}}" alt="obr4" id="obr4">
+    </a>
+    <p class="intro"">
+      <a href="mailto:detskylarpinfo@gmail.com" title="Napsat email">detskylarpinfo@gmail.com</a>
+    </p>
+
+</body>
+</html>

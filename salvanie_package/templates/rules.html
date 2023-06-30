@@ -3,7 +3,7 @@
 {% block page_title %}Pravidla{% endblock %}
 
 {% block background_image %}
-<img id="erbik" src="{{ url_for('static', filename='images/pravidla.png')}}" alt="erbik">
+<img id="manuscript-rules" src="{{ url_for('static', filename='images/pravidla.png')}}" alt="manuscript-rules">
 {% endblock %}
 
 {% block section %}Pravidla{% endblock %}
@@ -24,7 +24,7 @@
     nikdo nekontroluje. Jen tak si můžete hru užít naplno jak vy, tak ostatní hráči.
 </p>
 <hr>
-<legend class="rasy"><h6>Hraní postavy</h6></legend>
+<legend class="subtitle-box"><h6>Hraní postavy</h6></legend>
 <br>
 <p>
     Celá tato hra je založena na tom, že se ocitnete úplně v jiném světě (plném dobrodružství, kouzel,
@@ -38,9 +38,9 @@
     jako kdybyste byli opravdu tím, koho hrajete.
 </p>
 <hr>
-<legend class="rasy"><h6>Boj</h6></legend>
+<legend class="subtitle-box"><h6>Boj</h6></legend>
 <br>
-<img class="boj" src="{{ url_for('static', filename='images/prisera_boj.png')}}">
+<img class="img-rules" src="{{ url_for('static', filename='images/prisera_boj.png')}}">
 <p>
     Během hry budete mít spoustu příležitostí si zabojovat, i když hru si lze užít i bez boje.
     Na akci používáme měkčené zbraně. Nicméně upozorňuji, že boj je boj a nějaká ta modřina být může!
@@ -55,7 +55,7 @@
 <p>
     - Bojovat se smí pouze schválenými zbraněmi (budou viditelně označené) - měkčené, vyrobené podle pravidel.
 </p>
-<p class="tluste">
+<p class="bolt-text">
     - Zásahová plocha je celé tělo kromě hlavy a rozkroku (pokud Vás někdo OMYLEM zasáhne do tohoto místa,
     zásah si nepočítáte). Pokud tam někoho zasáhnete OMYLEM vy, zastavíte hru, omluvíte se, zeptáte se, jestli
     je v pohodě a případně vyhledáte zdravotníka/orga.
@@ -84,12 +84,11 @@
 <p>
     - Při boji se ZÁSADNĚ NEHÁDÁME a uznáváme si zásahy, je to přeci jen legrace. Zásah uznává vždy zasažený!
 </p>
-<img width="80%" src="{{ url_for('static', filename='images/stit.png')}}" style="padding-bottom: 10px;">
-<p class="tluste">
+<p class="bolt-text">
     - Kdo nebude dodržovat tato pravidla, bude mu boj zakázán!
 </p>
 <hr>
-<legend class="rasy"><h6>Herní smrt</h6></legend>
+<legend class="subtitle-box"><h6>Herní smrt</h6></legend>
 <p>
     Během hry (hlavně bojů) se občas stane, že někdo (herně!!!) zemře. Nevěšte hlavu,
     na rozdíl od normálního života v našem světě smrtí nic nekončí!
@@ -110,9 +109,9 @@
 <p>
     Takže smrti u nás se opravdu nemusíte bát! :-)
 </p>
-<img class="boj" src="{{ url_for('static', filename='images/smrt.png')}}">
+<img class="img-rules" src="{{ url_for('static', filename='images/smrt.png')}}">
 <hr>
-<legend class="rasy"><h6>Herní území</h6></legend>
+<legend class="subtitle-box"><h6>Herní území</h6></legend>
 <br>
 <p>
     Po každé bude před hrou určené a vymezené, kam se chodit smí a kam už ne. 
@@ -126,8 +125,8 @@
     bude doprovázet průvodce.
 </p>
 <img src="{{ url_for('static', filename='images/uzemi.png')}}">
-<hr class="cara">
-<legend class="rasy"><h6>Herní peníze</h6></legend>
+<hr class="separator">
+<legend class="subtitle-box"><h6>Herní peníze</h6></legend>
 <br>
 <p>
     V Šalvánii se k placení nejčastěji využívají kovové mince. Ty se dělí na čtyři druhy -
@@ -142,7 +141,7 @@
 </p>
 <img src="{{ url_for('static', filename='images/penize.png')}}">
 <hr>
-<legend class="rasy" style="width: 60%;"><h6>Kouzlení, míchání lektvarů</h6></legend>
+<legend class="subtitle-box" style="width: 60%;"><h6>Kouzlení, míchání lektvarů</h6></legend>
 <p>
     Každý, kdo chce, může kouzlit a míchat lektvary, ať kouzelné či léčivé nebo smrtelné (jedy).
     Ale je nutné se to napřed naučit! Učit se můžete z knih, svitků atd, pokud se Vám dostanou do
@@ -161,7 +160,7 @@
     Dále je dobré mít u sebe psací potřeby a kouzla či recepty na lektvary si zapisovat, abyste je nezapomněli!
 </p>
 <hr>
-<legend class="rasy"><h6>Magie</h6></legend>
+<legend class="subtitle-box"><h6>Magie</h6></legend>
 <img src="{{ url_for('static', filename='images/magie.png')}}">
 <p>
     Magii se může učit každý. Dělí se na úrovně:
@@ -181,7 +180,7 @@ dopředu přinést (myslete na to, že se z toho v tu chvíli stane herní před
 magů dostanete od nás.
 </p>
 <hr>
-<legend class="rasy"><h6>Alchymie</h6></legend>
+<legend class="subtitle-box"><h6>Alchymie</h6></legend>
 <img src="{{ url_for('static', filename='images/lektvar.png')}}">
 <p>
     Na míchání lektvarů je vždy zapotřebí (může být zapotřebí něco navíc/víc druhů bylin nebo surovin...):

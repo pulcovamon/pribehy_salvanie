@@ -8,46 +8,23 @@
     display: none;
 }
 
-h1 {
-    text-transform: uppercase;
-    font-size: 50px;
-    font-weight: bold;
-    font-style: italic;
-    text-align: center;
-    color: blanchedalmond;
-}
-
-h2 {
-    text-align: center;
-    font-size: 35px;
-    margin: 10px;
-    text-transform: uppercase;
-}
-
 body {
-    /*background-image: url('images/pozadi.png');*/
-    background-color: blanchedalmond;
+    background-color: #181818;
     color: blanchedalmond;
     font-family: Garamond, serif;
     overflow: hidden;
     overflow-y: scroll;
 }
 
-h3 {
-    text-align: center;
-    font-size: 35px;
-    margin: 10px;
-    padding-bottom: 0px;
+.main-content {
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 0px;
+    margin-top: 10%;
+    width: 40%;
 }
 
-fieldset {
-    background-color: #5c4338;
-    border: 5px;
-    border-radius: 10px;
-    box-shadow: 20px 20px 40px -6px black;
-}
-
-.mySlides {
+.my-slides {
     width: 50%;
 }
 
@@ -65,37 +42,18 @@ fieldset {
     transform: scale(1.2);
   }
   
-  .next:hover {
-      background-color: rgba(0,0,0,0.8);
-      right: 25.5%;
-      transform: scale(1.2);
-  }
-
-.hlavni_stranka {
-    margin-left: 30%;
-    margin-right: 30%;
-    padding: 0px;
-    margin-top: 15%;
-    width: 40%;
+.next:hover {
+    background-color: rgba(0,0,0,0.8);
+    right: 25.5%;
+    transform: scale(1.2);
 }
-
-p {
-    text-align: justify;
-    font-size: 20px;
-}
-
-legend {
-    background-color: #628E90;
-    padding: 1%;
-}
-
 
 .text {
     padding-left: 5%;
     padding-right: 5%;
 }
 
-.uvod {
+.intro {
     text-align: center;
     margin-right: 10%;
     margin-left: 10%;
@@ -117,40 +75,33 @@ legend {
     text-decoration: none;
     display: block;
     padding: 5%;
-    text-decoration: none;
     color: blanchedalmond;
+    text-align: center;
 }
 
-.nazev_stranky {
-    overflow: hidden;
-    display: inline-block;
-}
-
-h1:hover {
-    font-size: 51px;
+.menu:hover {
     color: #00bdce;
-    font-weight: bold;
 }
 
+.dropdown:hover .dropdown-content {
+    visibility: visible;
+    display: block;
+}
 
-ul {
-    list-style-type: none;
+.dropdown-content {
+    visibility: hidden;
+    position: absolute;
+    background-color: #252525;
+    width: 12%;
+    box-shadow: 0px 8px 16px 0px black;
+    z-index: 1;
+    align-self: center;
 }
 
 img {
     margin: auto;
     width: 50%;
     display: block;
-}
-
-a {
-    color: #628E90;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #00bdce;
-    font-weight: bold;
 }
 
 .foto {
@@ -176,49 +127,28 @@ a:hover {
     float:left;
 }
 
-.tluste {
-    font-weight: bold;
-    display: inline;
-    color: #8bf5ff;
-}
-
-h4 {
-    font-weight: bold;
-    text-transform: uppercase;
-    color: blanchedalmond;
-}
-
-h5 {
-    font-weight: bold;
-    font-size: 25px;
-    margin: 0;
-}
-
-h6 {
-    font-size: 20px;
-    margin: 0;
-    text-transform: uppercase;
-}
-
 .navod {
     color: #8bf5ff;
 }
 
+.column-1 {
+    margin-top: 30px;
+    flex: 26%;
+}
+
 .column {
-    flex: 20%;
+    flex: 12%;
+    margin-top: 50px;
+}
+
+.column-2 {
+    flex: 10%;
+    margin-top: 20px;
 }
 
 .row {
     display: flex;
     padding: 0;
-}
-
-.pravidla_styl {
-    margin-top: 0px;
-    padding-top: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 10px;
 }
 
 #erby {
@@ -227,9 +157,9 @@ h6 {
     margin-top: 3%;
 }
 
-.dole {
-    border: 1px solid black;
-    color: black;
+.bottom {
+    border: 1px solid blanchedalmond;
+    color: blanchedalmond;
 }
 
 .container {
@@ -239,16 +169,6 @@ h6 {
     position:fixed;
     z-index: 1;
     top: 0;
-}
-
-.menu_box {
-    color:blanchedalmond;
-    display: inline;
-    list-style-type: none;
-    position: fixed;
-    padding-left: 0;
-    width: 20%;
-    z-index: 2;
 }
 
 #listiny {
@@ -280,14 +200,6 @@ h6 {
     transform: scale(1.2);
 }
 
-.rasy {
-    margin-left: -15%;
-    width: 30%;
-    text-align: left;
-    size: 25px;
-    padding: 15px;
-}
-
 #obr5 {
         margin-top: 10px;
         float: right;
@@ -299,7 +211,7 @@ h6 {
         right: 2%;
 }
     
-#erbik {
+#manuscript-rules {
     margin-top: 10px;
     float: right;
     width: 25%;
@@ -327,11 +239,6 @@ h6 {
         padding-right: 35px;
         position: fixed;
         right: 0;
-}
-
-.cara {
-        padding-top: 0px;
-        margin-top: 0px;
 }
 
 #postava {
@@ -382,10 +289,6 @@ h6 {
     padding-right: 35px;
     position: fixed;
     right: 0;
-}
-
-.boj {
-        width: 100%;
 }
 
 .seznam {
