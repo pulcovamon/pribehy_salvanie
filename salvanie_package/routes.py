@@ -7,7 +7,11 @@ from flask_login import login_user, logout_user, login_required
 @app.route("/")
 @app.route('/home')
 def home_page():
-    return render_template('home.html')
+    images = []
+    for i in range(10):
+        img = f'static/images/slideshow_home_0{i}.jpg'
+        images.append(img)
+    return render_template('home.html', images=images)
 
 @app.route("/pravidla")
 def rules_page():

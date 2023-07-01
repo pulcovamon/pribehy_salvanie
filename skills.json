@@ -1,0 +1,100 @@
+{ "skills": [
+    {
+        "name": "Alchymista",
+        "description": "Postava může připravovat magické lektvary.",
+        "HP": false,
+        "MP": false
+    },
+    {
+        "name": "Felčar",
+        "description": "Postava může léčit pomocí obvazů a připravovat bylinné lektvary",
+        "HP": false,
+        "MP": false
+    },
+    {
+        "name": "Hraničář",
+        "description": "Postava může stopovat a klást lovecké pasti.",
+        "HP": false,
+        "MP": false
+    },
+    {
+        "name": "Pyroman",
+        "description": "Postava může vyrábět a používat magické petardy a získává život navíc.",
+        "HP": true,
+        "MP": false,
+        "prerequisity": "Alchymista"
+    },
+    {
+        "name": "Čaroděj",
+        "description": "Postava může sesílat magické projektily.",
+        "HP": false,
+        "MP": true
+    },
+    {
+        "name": "Zaříkávač",
+        "description": "Postava může provádět magické rituály.",
+        "HP": false,
+        "MP": true
+    },
+    {
+        "name": "Mág",
+        "description": "Postava může sesílat kouzla z mágovy magické knihy.",
+        "HP": false,
+        "MP": true
+    },
+    {
+        "name": "Lovec",
+        "description": "Postava může používat střelné zbraně a získává život navíc.",
+        "HP": true,
+        "MP": false
+    },
+    {
+        "name": "Válečník",
+        "description": "Postava může používat štíty a získává život navíc.",
+        "HP": true,
+        "MP": false
+    },
+    {
+        "name": "Šermíř",
+        "description": "Postava může používat obouruční zbraně a jednou za boj dát zásah za dva životy pomocí hesla 'zhyň'.",
+        "HP": true,
+        "MP": false
+    },
+    {
+        "name": "Důstojník",
+        "description": "Postava může sestavit jednotku ze 3-5 postav. Potřebuje k tomu prapor schválený organizátory. Jednotka se nesmí rozdělit a každý člen může ignorovat první zásah v boji.",
+        "HP": false,
+        "MP": false,
+        "prerequisity": "Šermíř"
+    },
+    {
+        "name": "Klerik",
+        "description": "Postava může sesílat kouzla z klerikovy magické knihy. Musí si vybrat boha, kterého uctívá.",
+        "HP": false,
+        "MP": true
+    },
+    {
+        "name": "Zloděj",
+        "description": "Postava může okrádat ostatní postavy a CP pomocí kolíčku.",
+        "HP": false,
+        "MP": false
+    },
+    {
+        "name": "Lupič",
+        "description": "Postava může využívat paklíče k odemykání zámků.",
+        "HP": false,
+        "MP": false
+    },
+    {
+        "name": "Barbar",
+        "description": "Pokud je postava zraněná, může jednou za boj zařvat a dát zásah za 3 životy.",
+        "HP": true,
+        "MP": false
+    },
+    {
+        "name": "Druid",
+        "description": "Postava se může měnit ve zvíře dle výběru. Pokud je proměněná, má jeho vlastnosti. Je nutné mít masku na toto zvíře.",
+        "HP": false,
+        "MP": false
+    }
+]}

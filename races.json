@@ -1,0 +1,51 @@
+{ "races": [
+    {
+        "name": "Člověk",
+        "description": "Lidé jsou nejpočetnější rasou v Šalvánii, jsou velmi univerzální a rozmanití.",
+        "clothing": "Nepotřebují žádné speciální doplňky a oblékají se podle toho, odkud pocházejí.",
+        "insiration": "Vrcholný a pozdní středověk, hra Zaklínač 3.",
+        "ability": "Nemá žádné speciální dovednosti.",
+        "HP": false,
+        "MP": false
+    },
+    {
+        "name": "Elf",
+        "description": "Elfové přísluší k velmi prastaré rase, bývají dlouholetí a vynikají v magii.",
+        "clothing": "Ke kostýmu jsou zapotřebí špičaté uši. Elfové z lesa se často odívají do zelených, hnědých a šedých barev, městští elfové se naopak libují v pestrých barvách. Mají rádi různé cípy, široké kápě a zdobení a ornamenty.",
+        "insiration": "Elfové ze hry Zaklínač 3, Dragon Age nebo z filmu Pán prstenů.",
+        "ability": "Má o 1 manu více.",
+        "HP": false,
+        "MP": true
+    },
+    {
+        "name": "Trpaslík",
+        "description": "Trpaslíci jsou silné a odolné bytosti malého vzrůstu, které často žijí pod zemí, nebo si staví skalní města.",
+        "clothing": "Ke kostýmu jsou zapotřebí trpasličí fousy. Často nosí vlněné tuniky, kápě a volné kalhoty, mají rádi různé ornamenty a hlavně runové nápisy.",
+        "insiration": "Raný středověk, trpaslíci z filmu Pán prstenů.",
+        "ability": "Má 1 život navíc.",
+        "HP": true,
+        "MP": false
+    },
+    {
+        "name": "Půlčík",
+        "description": "Půlčíci jsou malé, veselé bytosti. Většinou žijí všední život v klidných krajích, někteří však žijí i ve městech.",
+        "clothing": "",
+        "insiration": "",
+        "ability": "Může sebrat 5 bylinek namísto 3.",
+        "HP": false,
+        "MP": false
+
+    },
+    {
+        "name": "Gnóm",
+        "description": "",
+        "clothing": "",
+        "insiration": "",
+        "ability": "Může vypít 2 lektvary namísto 1.",
+        "HP": false,
+        "MP": false
+
+    }
+]
+
+}
